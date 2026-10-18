@@ -140,3 +140,7 @@ AWS-Hilfen:
 - https://docs.aws.amazon.com/amplify/latest/userguide/getting-started-next.html
 - https://docs.aws.amazon.com/amplify/latest/userguide/amplify-SSR-compute-role.html
 - https://docs.aws.amazon.com/amplify/latest/userguide/server-side-rendering-amplify.html
+
+## Korrigierte Next.js-Struktur
+
+`app/page.js` leitet nach `/home` weiter. Die HTML-Oberfläche wird von `app/home/route.js` ausgeliefert. `app/layout.js` ist das Root-Layout; die API-Routen verbleiben unverändert unter `app/api/...`. Alle Unterordner beim Upload unbedingt erhalten!
